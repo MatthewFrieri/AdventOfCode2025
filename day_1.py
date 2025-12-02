@@ -1,8 +1,9 @@
 from base_answer import BaseAnswer
 
+
 class PartOne(BaseAnswer):
 
-    def answer(data):
+    def answer(data: list[str]):
 
         zeroes = 0
         tick = 50
@@ -19,9 +20,10 @@ class PartOne(BaseAnswer):
 
         return zeroes
 
+
 class PartTwo(BaseAnswer):
 
-    def answer(data):
+    def answer(data: list[str]):
         zeroes = 0
         tick = 50
         
