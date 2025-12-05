@@ -15,11 +15,11 @@ class PartOne(BaseAnswer):
 
         for id_range in data:
             start, end = id_range.split("-")
-            
+
             for n in range(int(start), int(end) + 1):
                 if cls.is_invalid_id(str(n)):
                     id_sum += n
-            
+
         return id_sum
 
 

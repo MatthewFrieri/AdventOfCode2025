@@ -26,7 +26,7 @@ class PartTwo(BaseAnswer):
     def answer(data: list[str]):
         zeroes = 0
         tick = 50
-        
+
         for rotation in data:
             direction = rotation[0]
             change = int(rotation[1:])
@@ -34,7 +34,7 @@ class PartTwo(BaseAnswer):
             if direction == "R":
                 tick += change
                 zeroes += tick // 100
-                
+
             elif direction == "L":
                 if tick == 0:
                     zeroes -= 1
